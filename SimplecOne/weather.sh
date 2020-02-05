@@ -11,9 +11,9 @@
 ########################################################
 
 UNITY="c"
-API_KEY="811cf1a065d4f81dd8a680878a7163f9"
-CITY="Tinh Lam GJong"
-COUNTRY="vn"
+API_KEY="YOUR_API_KEY"
+CITY="YOUR_CITY"
+COUNTRY="YOUR_COUNTRY"
 
 ########################################################
 rm ~/.cache/weather.txt
