@@ -64,12 +64,13 @@ ${goto 20}$color2${font LineAwesomeMod :size=14}Q $font$color5 Running Processes
 ${goto 20}$color2${font LineAwesomeMod :size=14}D $font$color5 Desktop${if_match "$desktop"!="Not running in X"}(${desktop}/${desktop_number})${endif}: ${desktop_name}
 ${goto 20}$color2${font LineAwesomeMod :size=14}7 $font$color5 Threads: ${running_threads}
 
-${goto 20}$color2${font LineAwesomeMod :size=14}= $font$color1 Local IP: ${addr wlp3s0}
+${goto 20}$color2${font LineAwesomeMod :size=14}= $font$color1 Local IP: ${addr <YOUR_NAME_ADDRESS>}
 ${goto 20}$color2${font LineAwesomeMod :size=14}= $font$color1 Public IP: ${execi 60 curl  ipinfo.io/ip}
 
-${goto 20}$color2${font LineAwesomeMod :size=14}T $font$color6 Upload Speed${alignr 10}${upspeed wlp3s0}
-${goto 20}${upspeedgraph wlp3s0 30, 300 4B1B0C FF0000 -l}$color1
-${goto 20}$color2${font LineAwesomeMod :size=14}8 $font$color7 Download Speed${alignr 10}${downspeed wlp3s0}
-${goto 20}${downspeedgraph wlp3s0 30, 300 324D23 00FF00 -l}$color1
+${goto 20}$color2${font LineAwesomeMod :size=14}T $font$color6 Upload Speed${alignr 10}${upspeed <YOUR_NAME_ADDRESS>}
+${goto 20}${upspeedgraph <YOUR_NAME_ADDRESS> 30, 300 4B1B0C FF0000 -l}$color1
+${goto 20}$color2${font LineAwesomeMod :size=14}8 $font$color7 Download Speed${alignr 10}${downspeed <YOUR_NAME_ADDRESS>}
+${goto 20}${downspeedgraph <YOUR_NAME_ADDRESS> 30, 300 324D23 00FF00 -l}$color1
 
+# You can find <YOUR_NAME_ADDRESS> using 'ip link show' in your terminal, the name should be followed after the counting
 
