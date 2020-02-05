@@ -27,6 +27,7 @@ Copy the content of the folder fonts/ to the directory ~/.fonts/
   > I used `Font manager` for this step 
   
   > `sudo apt install font-manager`
+  
 Copy the folder SimplecOne for the directory ~/.conky/
 `cp SimplecOne/ ~/.conky`
 
